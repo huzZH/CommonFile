@@ -1,0 +1,31 @@
+
+git status  //显示当前工作区的状态，包括各个文件夹的状态
+
+git remote -v  //查看本文件夹对应的远程仓库的信息
+
+git merge origin/master //获取远程服务器上主分支的版本，并自动合并，不会改变本地版本库中的已修改的部分
+
+git checkout readme.txt  //撤销对readme.txt文件的更改，使其与获取到的时候保持一致
+
+git rm abc.txt //当我们需要删除暂存区或分支上的文件, 同时工作区也不需要这个文件了, 可以使用
+
+git rm --cached abc.txt   //当我们需要删除暂存区或分支上的文件, 本地没有删除, 只是不希望这个文件被版本控制, 可以使用
+
+git rm -r 文件夹名    //删除文件夹及其子目录
+
+git branch  //查看所有的本地分支，及其当前处于哪个分支
+
+git branch -a //显示所有的本地分支和远程分支   在不同电脑的本地仓库，执行本命令显示的远程仓库分支是不一样的
+
+git branch a  //创建本地分支a ,当前分支不变
+
+git checkout a //当前分支切换到分支a
+
+git checkout -b b  //新建本地分支b，当前分支切换到分支b
+
+git branch -d a    //删除分支a，若a分支的代码未合并到本地的master分支，则删除失败
+
+git branch -D a    //强制删除分支a,不管其是否合并到本地的master分支
+
+
+
